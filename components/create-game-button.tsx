@@ -47,13 +47,13 @@ export function CreateGameButton() {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
-                <Button>Neues Spiel erstellen</Button>
+                <Button>Create new game</Button>
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Neues Spiel erstellen</DialogTitle>
+                    <DialogTitle>Create new game</DialogTitle>
                     <DialogDescription>
-                        {"Erstellen Sie ein neues Spiel"}
+                        {"Choose your color or let it be random."}
                     </DialogDescription>
                 </DialogHeader>
                 <div className="flex flex-row justify-center items-center gap-4">
@@ -62,7 +62,7 @@ export function CreateGameButton() {
                         className="py-4 flex-col h-auto gap-0"
                         onClick={() => setPreferredColor("w")}
                     >
-                        <span>Weiß</span>
+                        <span>White</span>
                         <Image
                             src="/pieces/king-w.svg"
                             width={50}
@@ -75,7 +75,7 @@ export function CreateGameButton() {
                         className="py-4 flex-col h-auto gap-0"
                         onClick={() => setPreferredColor("r")}
                     >
-                        <span>Zufall</span>
+                        <span>Random</span>
                         <Image
                             src="/pieces/king-w.svg"
                             width={50}
@@ -88,7 +88,7 @@ export function CreateGameButton() {
                         className="py-4 flex-col h-auto gap-0"
                         onClick={() => setPreferredColor("b")}
                     >
-                        <span>Schwarz</span>
+                        <span>Black</span>
                         <Image
                             src="/pieces/king-b.svg"
                             width={50}
@@ -98,7 +98,7 @@ export function CreateGameButton() {
                     </Button>
                 </div>
                 <DialogFooter>
-                    <Button onClick={createGame}>Erstellen</Button>
+                    <Button onClick={createGame}>Create</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
