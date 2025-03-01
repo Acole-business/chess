@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Max's Chess Game",
-    description: "A chess game made by Max",
+    title: "Acole Chess Game",
+    description: "A chess game made by Arrow Cole",
 };
 
 export default function RootLayout({
