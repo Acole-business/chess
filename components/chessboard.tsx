@@ -51,7 +51,7 @@ export let boardSize: number = 0;
 export let mouseX = 0;
 export let mouseY = 0;
 export let iAm: "w" | "b" = "w";
-export let flipped = false;
+// export let flipped = false;
 export let moveBuffer: string[] = [];
 export let images: ChessImages = defaultChessImages;
 export let imagesReady = false;
@@ -509,10 +509,9 @@ export function Chessboard(props: Props) {
             (f) => f.row !== row || f.col !== col,
         );
     }, []);
-
-    const onFlip = useCallback(() => {
-        flipped = !flipped;
-    }, []);
+//    const onFlip = useCallback(() => {
+//        flipped = !flipped;
+//    }, []);
 
     return (
         <main className="w-screen h-screen p-8">
