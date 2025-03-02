@@ -566,7 +566,7 @@ export function Chessboard(props: Props) {
                     <DialogHeader>
                         <DialogTitle>
                             {winner
-                                ? `${winner === "b" ? "Black" : "White"} wins!`
+                                ? `${winner === "b" ? "White" : "Black"} wins!`
                                 : "Draw!"}
                         </DialogTitle>
                         <DialogDescription>{outcome}</DialogDescription>
