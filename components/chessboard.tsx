@@ -559,7 +559,6 @@ export function Chessboard(props: Props) {
                     >
                         Calculate best move
                     </Button>
-                    <Button onClick={onFlip}>Flip</Button>
                     <CreateGameButton />
                 </div>
             </div>
