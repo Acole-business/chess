@@ -558,7 +558,27 @@ export function Chessboard(props: Props) {
                     >
                         Calculate best move
                     </Button>
+                    <Button
+                        onClick={() => {
+                            chess.undo();
+                            setScore(0); // Reset score after undo
+                            setWinner(null); // Reset winner after undo
+                            setOutcome(null); // Reset outcome after undo
+                            if (props.againstAi) {
+                                saveLocalGame(gameId); // Save game state after undo
+                            }
+                        }}
+                    >
+                        Undo
+                    </Button>
                     <CreateGameButton />
+                    <Button
+                        onClick={() => {
+                            window.location.href = "https://help.acole-chess.app";
+                        }}
+                    >
+                        Help
+                    </Button>
                 </div>
             </div>
             <Dialog open={winner != null || outcome === "draw"}>
@@ -566,7 +586,7 @@ export function Chessboard(props: Props) {
                     <DialogHeader>
                         <DialogTitle>
                             {winner
-                                ? `${winner === "b" ? "White" : "Black"} wins!`
+                                ? `${winner === "b" ? "Black" : "White"} wins!`
                                 : "Draw!"}
                         </DialogTitle>
                         <DialogDescription>{outcome}</DialogDescription>
