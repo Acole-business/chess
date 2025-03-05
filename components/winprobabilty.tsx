@@ -34,8 +34,8 @@ export function WinProbability({ score }: Props) {
 
     return (
         <div className="WinProbabilty" ref={ref}>
-            <div className="Black" />
-            <div className="White" style={{ height: size }} />
+            <div className="White" />
+            <div className="Black" style={{ height: size }} />
         </div>
     );
 }
