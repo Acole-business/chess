@@ -1,0 +1,12 @@
+<Button
+                        onClick={() =>
+                            getBestMove(
+                                gameId,
+                                props.againstAi,
+                                chess.turn(),
+                                iAm,
+                            )
+                        }
+                    >
+                        Calculate best move
+                    </Button>
