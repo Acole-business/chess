@@ -547,18 +547,6 @@ export function Chessboard(props: Props) {
                 </div>
                 <div className="flex flex-col-reverse lg:flex-col gap-4">
                     <Button
-                        onClick={() =>
-                            getBestMove(
-                                gameId,
-                                props.againstAi,
-                                chess.turn(),
-                                iAm,
-                            )
-                        }
-                    >
-                        Calculate best move
-                    </Button>
-                    <Button
                         onClick={() => {
                             chess.undo();
                             setScore(0); // Reset score after undo
@@ -586,8 +574,7 @@ export function Chessboard(props: Props) {
                     <DialogHeader>
                         <DialogTitle>
                             {winner
-                                ? `${winner === "b" ? "Black" : "White"} wins!`
-                                : "Draw!"}
+                                ? `${winner === "b" ? "Black" : "White"} wins!` : "Draw!"};
                         </DialogTitle>
                         <DialogDescription>{outcome}</DialogDescription>
                     </DialogHeader>
