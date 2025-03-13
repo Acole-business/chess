@@ -98,7 +98,27 @@ export function CreateGameButton() {
                     </Button>
                 </div>
                 <DialogFooter>
-                    <Button onClick={createGame}>Create</Button>
+                    <Button onClick={createGame}>Play Bot</Button>
+                    <Button
+                        onClick={() => {
+                            const id = v4();
+                            const localGames = JSON.parse(localStorage.getItem("games") || "[]");
+                            const game: LocalGame = {
+                                id,
+                                fen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+                                player1: localStorage.getItem("id") ?? "",
+                                player2: "",
+                                color: preferredColor === "r" ? (Math.random() > 0.5 ? "w" : "b") : preferredColor,
+                                moves: [],
+                            };
+                            localGames.push(game);
+                            localStorage.setItem("games", JSON.stringify(localGames));
+                            window.location.href = `https://two-player-chess-gules.vercel.app/`;
+//                            window.location.href = `https://two-player.acole-chess.app/`;
+                        }}
+                    >
+                        Play Human
+                    </Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
