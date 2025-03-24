@@ -32,7 +32,7 @@ const HowToPlayChess: React.FC = () => {
             </ul>
 
             <h2>Winning the Game</h2>
-            <p>The game is won by checkmating the opponent's king. Checkmate occurs when the king is in a position to be captured (in check) and there is no legal move to escape the threat.</p>
+            <p>The game is won by checkmating the opponent&apos;s king. Checkmate occurs when the king is in a position to be captured (in check) and there is no legal move to escape the threat.</p>
 
             <p>For more detailed rules and strategies, please refer to the following resources:</p>
             <ul>
