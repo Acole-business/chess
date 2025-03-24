@@ -12,7 +12,7 @@ const HowToPlayChess: React.FC = () => {
             <h1>How to Play Chess</h1>
             <br></br>
             <p>Welcome to the Chess tutorial! This page will guide you through the basic rules and strategies of chess.</p>
-            <p>Chess is a two-player strategy game played on an 8x8 grid. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate your opponent's king.</p>
+            <p>Chess is a two-player strategy game played on an 8x8 grid. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate your opponent&apos;s king.</p>
 
             <h2>Basic Rules</h2>
             <ul>
