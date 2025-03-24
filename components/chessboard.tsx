@@ -562,7 +562,7 @@ export function Chessboard(props: Props) {
                     <CreateGameButton />
                     <Button
                         onClick={() => {
-                            window.location.href = "https://help.acole-chess.app";
+                            window.location.href = "/help";
                         }}
                     >
                         Help
