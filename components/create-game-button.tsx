@@ -114,7 +114,7 @@ export function CreateGameButton() {
                             localGames.push(game);
                             localStorage.setItem("games", JSON.stringify(localGames));
 //                            window.location.href = `https://two-player-chess-gules.vercel.app/`;
-                            window.location.href = `https://two-player.acole-chess.app/`;
+                            window.location.href = `https://two-player.chess.acole.xyz/`;
                         }}
                     >
                         Play Human
