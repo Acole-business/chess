@@ -19,14 +19,14 @@ Here are some screenshots of the game in action:
 
 ## Links
 
-- [Website](https://acole-chess.app)
-- [Help Site](https://help.acole-chess.app)
+- [Website](https://chess.acole.xyz)
+- [Help Site](https://help.chess.acole.xyz)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions or suggestions, please open an issue or contact [Aaron@acole-chess.app].
+For any questions or suggestions, please open an issue or contact [Aaron@acole.tech].
 
 Enjoy playing chess!
